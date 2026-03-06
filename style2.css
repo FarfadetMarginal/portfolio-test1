@@ -949,3 +949,9 @@ footer span {
   .contact-title { letter-spacing: -2px; }
   .form-line { grid-template-columns: 1fr; }
 }
+
+#imglogo {
+  height: 72px;
+  width: auto;
+  display: block;
+}
