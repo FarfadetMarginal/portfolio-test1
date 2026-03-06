@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baptiste COUTAS - Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+  <!-- Curseur magnétique -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-outline"></div>
+  <div id="cursor-label"></div>
+
+  <!-- Grain overlay -->
+  <canvas id="grain"></canvas>
+
+  <!-- ══════════════════════════════
+       NAV
+  ══════════════════════════════ -->
+  <header id="header">
+    <a href="#" class="logo">AM<span class="logo-dot">.</span></a>
+    <nav>
+      <a href="#work"      data-cursor="Projets">Projets</a>
+      <a href="#skills"    data-cursor="Stack">Compétences</a>
+      <a href="#about"     data-cursor="À propos">À propos</a>
+      <a href="#contact"   data-cursor="Hello">Contact</a>
+    </nav>
+    <div class="header-status">
+      <span class="status-pulse"></span>Open to work
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════
+       HERO
+  ══════════════════════════════ -->
+  <section class="hero" id="hero">
+
+    <!-- Titre glitch -->
+    <div class="hero-eyebrow">
+      <span class="mono">[ 001 ]</span>
+      Développeur Full-Stack &amp; Designer UI
+    </div>
+
+    <h1 class="hero-title" id="heroTitle">
+      <span class="word" data-text="Dev -">Dev -</span>
+      <span class="word accent-word" data-text="Web -">Web -</span>
+      <span class="word" data-text="Design -">Design -</span>
+      <br>
+      <span class="word" data-text="Interfaces -">Interfaces -</span>
+      <span class="word accent-word-2" data-text="Code -">Code -</span>
+      <span class="word" data-text="...">...</span>
+    </h1>
+
+    <p class="hero-sub">
+    40+ projets · Basé dans le sud-est de la France · bilingue anglais
+    </p>
+
+    <div class="hero-cta-row">
+      <a href="#work" class="cta-main" id="ctaMain">
+        <span class="cta-text">Voir mon travail</span>
+        <span class="cta-arrow">↗</span>
+      </a>
+      <div class="hero-marquee-wrapper">
+        <div class="hero-marquee">
+          <span>React &nbsp;·&nbsp; Node.js &nbsp;·&nbsp; HTML/CSS &nbsp;·&nbsp; Python &nbsp;·&nbsp; PHP &nbsp;·&nbsp; Figma &nbsp;·&nbsp; Wordpress &nbsp;·&nbsp; Javascrpit &nbsp;·&nbsp;</span>
+          <span>React &nbsp;·&nbsp; Node.js &nbsp;·&nbsp; HTML/CSS &nbsp;·&nbsp; Python &nbsp;·&nbsp; PHP &nbsp;·&nbsp; Figma &nbsp;·&nbsp; Wordpress &nbsp;·&nbsp; Javascrpit &nbsp;·&nbsp;</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Compteur animé -->
+    <div class="hero-counters">
+      <div class="counter-item">
+        <span class="counter-num" data-target="40">0</span><span class="counter-plus">+</span>
+        <span class="counter-label">Projets</span>
+      </div>
+      <div class="counter-divider"></div>
+      <div class="counter-item">
+        <span class="counter-num" data-target="5">0</span><span class="counter-plus">ans</span>
+        <span class="counter-label">Expérience</span>
+      </div>
+      <div class="counter-divider"></div>
+      <div class="counter-item">
+        <span class="counter-num" data-target="12">0</span><span class="counter-plus">+</span>
+        <span class="counter-label">Clients</span>
+      </div>
+    </div>
+
+    <!-- Ligne décorative -->
+    <div class="hero-line" id="heroLine"></div>
+
+  </section>
+
+  <!-- ══════════════════════════════
+       WORK / PROJETS
+  ══════════════════════════════ -->
+  <section class="section" id="work">
+    <div class="section-header reveal">
+      <span class="mono section-num">[ 002 ]</span>
+      <h2 class="section-title">Projets<br><em>sélectionnés</em></h2>
+    </div>
+
+    <div class="projects-list">
+
+      <article class="project-row reveal" data-color="#FF3B30">
+        <div class="project-index mono">01</div>
+        <div class="project-info">
+          <h3>Pokedex <span class="project-tag">Web</span></h3>
+          <p>Création d'un pokedex · Simple entrainement python dans le cadre de ma formation langage informatique</p>
+        </div>
+        <div class="project-tech mono">Python · juste python</div>
+        <a href="https://github.com/FarfadetMarginal/pokedex-py" class="project-arrow" aria-label="Voir Pokedex">↗</a>
+        <div class="project-preview">
+          <div class="preview-inner preview-1"></div>
+        </div>
+      </article>
+
+      <article class="project-row reveal" data-color="#34C759">
+        <div class="project-index mono">02</div>
+        <div class="project-info">
+          <h3>Reveil du metaverse <span class="project-tag">Web</span></h3>
+          <p>Integration d'un site · utilisation d'HTML et CSS uniquement</p>
+        </div>
+        <div class="project-tech mono">HTML · CSS</div>
+        <a href="https://farfadetmarginal.github.io/exofigma4/" class="project-arrow" aria-label="Voir Reveil du metaverse">↗</a>
+        <div class="project-preview">
+          <div class="preview-inner preview-2"></div>
+        </div>
+      </article>
+
+      <article class="project-row reveal" data-color="#FF9F0A">
+        <div class="project-index mono">03</div>
+        <div class="project-info">
+          <h3>Blog <span class="project-tag">back</span></h3>
+          <p>Projet de création d'un blog · gestion de base de données et API</p>
+        </div>
+        <div class="project-tech mono">PHP · wamp · API</div>
+        <a href="https://github.com/FarfadetMarginal/Blog-PHP" class="project-arrow" aria-label="Voir Blog">↗</a>
+        <div class="project-preview">
+          <div class="preview-inner preview-3"></div>
+        </div>
+      </article>
+
+      <article class="project-row reveal" data-color="#0A84FF">
+        <div class="project-index mono">04</div>
+        <div class="project-info">
+          <h3>Orbit <span class="project-tag">IA</span></h3>
+          <p>Assistant IA intégré · GPT-4 · RAG · Traitement documentaire</p>
+        </div>
+        <div class="project-tech mono">Python · LangChain · Next.js</div>
+        <a href="#" class="project-arrow" aria-label="Voir Orbit">↗</a>
+        <div class="project-preview">
+          <div class="preview-inner preview-4"></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       SKILLS
+  ══════════════════════════════ -->
+  <section class="section section-alt" id="skills">
+    <div class="section-header reveal">
+      <span class="mono section-num">[ 003 ]</span>
+      <h2 class="section-title">Mon<br><em>stack</em></h2>
+    </div>
+
+    <div class="skills-bento reveal">
+
+      <div class="bento-card bento-large" id="bentoFrontend">
+        <div class="bento-label mono">Frontend</div>
+        <div class="bento-title">L'art de<br>l'interface</div>
+        <div class="bento-tags">
+          <span class="btag btag-red">React</span>
+          <span class="btag btag-orange">Next.js</span>
+          <span class="btag btag-blue">TypeScript</span>
+          <span class="btag btag-green">Tailwind</span>
+          <span class="btag">Framer</span>
+          <span class="btag">WebGL</span>
+        </div>
+        <div class="bento-deco" id="bentoDeco1"></div>
+      </div>
+
+      <div class="bento-card bento-tall">
+        <div class="bento-label mono">Backend</div>
+        <div class="bento-title">La<br>mécanique</div>
+        <div class="bento-tags">
+          <span class="btag btag-green">Node.js</span>
+          <span class="btag">Express</span>
+          <span class="btag btag-blue">PostgreSQL</span>
+          <span class="btag">Redis</span>
+          <span class="btag">GraphQL</span>
+        </div>
+      </div>
+
+      <div class="bento-card bento-wide">
+        <div class="bento-label mono">DevOps</div>
+        <div class="bento-title">Du code au prod</div>
+        <div class="bento-tags">
+          <span class="btag btag-orange">AWS</span>
+          <span class="btag">Docker</span>
+          <span class="btag">CI/CD</span>
+          <span class="btag">Terraform</span>
+        </div>
+      </div>
+
+      <div class="bento-card bento-small bento-accent">
+        <div class="bento-label mono">Design</div>
+        <div class="bento-title">Figma<br>first</div>
+      </div>
+
+      <div class="bento-card bento-small">
+        <div class="bento-label mono">IA</div>
+        <div class="bento-title">LLM<br>&amp; RAG</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       ABOUT
+  ══════════════════════════════ -->
+  <section class="section" id="about">
+    <div class="section-header reveal">
+      <span class="mono section-num">[ 004 ]</span>
+      <h2 class="section-title">Qui<br><em>je suis</em></h2>
+    </div>
+
+    <div class="about-layout">
+      <div class="about-text reveal">
+        <p class="about-big">Je suis Alex Moreau,<br>développeur basé à <span class="underline-vivid">Paris</span>.</p>
+        <p class="about-body">Je crois que le code et le design ne font qu'un. Chaque projet est une occasion de créer quelque chose de précis, de rapide, et de mémorable — de l'architecture technique à la dernière micro-animation.</p>
+        <p class="about-body">Quand je ne code pas, je bois du café, je lis sur la théorie du design, et j'explore les interfaces de demain.</p>
+        <div class="about-links">
+          <a href="#" class="about-link">GitHub ↗</a>
+          <a href="#" class="about-link">LinkedIn ↗</a>
+          <a href="#" class="about-link">CV PDF ↗</a>
+        </div>
+      </div>
+
+      <div class="timeline-minimal reveal">
+        <div class="tl-item">
+          <span class="tl-year mono">2023→</span>
+          <div>
+            <strong>Lead Dev</strong>
+            <span class="tl-co">Nexus Studio, Paris</span>
+          </div>
+        </div>
+        <div class="tl-item">
+          <span class="tl-year mono">2021</span>
+          <div>
+            <strong>Senior Full-Stack</strong>
+            <span class="tl-co">TechCorp, Lyon</span>
+          </div>
+        </div>
+        <div class="tl-item">
+          <span class="tl-year mono">2019</span>
+          <div>
+            <strong>Dev Frontend</strong>
+            <span class="tl-co">AgenceWeb, Bordeaux</span>
+          </div>
+        </div>
+        <div class="tl-item">
+          <span class="tl-year mono">2016</span>
+          <div>
+            <strong>Master Informatique</strong>
+            <span class="tl-co">Paris-Saclay</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       CONTACT
+  ══════════════════════════════ -->
+  <section class="section section-contact" id="contact">
+    <span class="mono section-num reveal">[ 005 ]</span>
+
+    <div class="contact-big reveal">
+      <h2 class="contact-title">
+        Travaillons<br>
+        <span class="contact-title-em">ensemble<span class="contact-dot">.</span></span>
+      </h2>
+      <a href="mailto:alex@moreau.dev" class="contact-email" id="contactEmail">
+        alex@moreau.dev
+      </a>
+    </div>
+
+    <div class="contact-row reveal">
+      <div class="contact-form-wrap">
+        <div class="form-line">
+          <input type="text"  class="form-input" placeholder="Votre nom" id="fName">
+          <input type="email" class="form-input" placeholder="Email" id="fEmail">
+        </div>
+        <input type="text" class="form-input form-input-full" placeholder="Sujet" id="fSubject">
+        <textarea class="form-input form-input-full form-textarea" placeholder="Votre message…" id="fMsg"></textarea>
+        <button class="form-btn" id="formBtn">
+          <span class="form-btn-text">Envoyer</span>
+          <span class="form-btn-icon">→</span>
+        </button>
+      </div>
+
+      <div class="contact-info-col">
+        <div class="contact-fact">
+          <span class="mono">Disponibilité</span>
+          <strong>Freelance &amp; CDI</strong>
+        </div>
+        <div class="contact-fact">
+          <span class="mono">Lieu</span>
+          <strong>Paris · Remote</strong>
+        </div>
+        <div class="contact-fact">
+          <span class="mono">Réponse</span>
+          <strong>&lt; 24h</strong>
+        </div>
+        <div class="contact-socials">
+          <a href="#" class="social-chip">GitHub</a>
+          <a href="#" class="social-chip">LinkedIn</a>
+          <a href="#" class="social-chip">Twitter</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       FOOTER
+  ══════════════════════════════ -->
+  <footer>
+    <span class="mono">© 2025 Alex Moreau</span>
+    <span class="mono">Fait avec ☕ + trop d'itérations</span>
+  </footer>
+
+  <script src="script2.js"></script>
+</body>
+</html>
